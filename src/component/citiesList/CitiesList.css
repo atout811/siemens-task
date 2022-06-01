@@ -1,7 +1,23 @@
 .cities-list {
   width: 40%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.863);
+  /* backdrop-filter: blur(5px); */
   overflow: scroll;
+}
+h2 {
+  font-size: 4rem;
+}
+.cities-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.cities-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.cities-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }

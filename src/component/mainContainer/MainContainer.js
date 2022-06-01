@@ -26,7 +26,7 @@ const MainContainer = ({ setCountry }) => {
         {console.log(data)}
         <div className="data">
           <span className="temp">
-            {data?.current_condition[0].temp_C} <sup>&#176;</sup>
+            {data?.current_condition[0].temp_C} C<sup>&#176;</sup>
           </span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span className="city">{data?.request[0].query}</span>
