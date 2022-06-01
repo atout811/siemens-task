@@ -1,0 +1,32 @@
+.container {
+  width: 60%;
+  height: 100%;
+  /* background-color: #8bc6ec; */
+  background-image: url("../../assets/Screenshot_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.temp-city {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.city {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

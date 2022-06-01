@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import CitiesList from "./component/citiesList/CitiesList";
+import MainContainer from "./component/mainContainer/MainContainer";
 
 function App() {
+  const [country, setCountry] = useState();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to Weather App</h1>
+      <div className="wrapper">
+        <MainContainer setCountry={setCountry} />
+        <CitiesList country={country} />
+      </div>
     </div>
   );
 }
