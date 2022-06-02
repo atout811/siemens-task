@@ -49,7 +49,7 @@ export default function Dashboard() {
       console.log(country, cityName);
 
       const res = await axios.get(
-        `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e3fb13dbceaf43cea27141111222705&q=${cityName},${country}&date=2021&format=json&tp=24`
+        `https://api.worldweatheronline.com/premium/v1/weather.ashx?key=e3fb13dbceaf43cea27141111222705&q=${cityName},${country}&date=2021&format=json&tp=24`
       );
       setData(res.data.data);
     };

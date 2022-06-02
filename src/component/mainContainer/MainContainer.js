@@ -11,7 +11,7 @@ const MainContainer = ({ setCountry }) => {
       setCountry(data.country_name);
 
       const res = await axios.get(
-        `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e3fb13dbceaf43cea27141111222705&q=${data.country_name}&format=json&num_of_days=5&tp=24`
+        `https://api.worldweatheronline.com/premium/v1/weather.ashx?key=e3fb13dbceaf43cea27141111222705&q=${data.country_name}&format=json&num_of_days=5&tp=24`
       );
       console.log(res);
       setData(res.data.data);
