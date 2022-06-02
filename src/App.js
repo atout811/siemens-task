@@ -26,24 +26,13 @@ function App() {
           <>
             <MainContainer setCountry={setCountry} />
             <CitiesList country={country} />
-            hey
           </>
         )}
 
         {isTabletOrMobile && (
           <>
             <MainContainer setCountry={setCountry} />
-            <Button type="primary" onClick={showDrawer}>
-              More Cities?
-            </Button>
-            <Drawer
-              title="Basic Drawer"
-              placement="right"
-              onClose={onClose}
-              visible={visible}
-            >
-              <CitiesList country={country} />
-            </Drawer>
+            <CitiesList country={country} />
           </>
         )}
       </div>

@@ -41,10 +41,10 @@
     background-size: cover;
   }
   .temp-city {
-    height: 80%;
-    margin-top: 40%;
+    height: 100%;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .temp {
@@ -65,6 +65,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
 }
